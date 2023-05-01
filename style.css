@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box; 
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Urbanist', sans-serif;
+    color: #000000;
+}
+
+body, .icons, .data, main{
+    display: flex;
+}
+
+body{
+    min-height: 100vh;
+}
+
+header{
+    width: 50%;
+    background: url(./Header\ Image.svg) no-repeat center / cover;
+    padding: 3% 1%;
+}
+main {
+    flex-direction: column;
+    flex: 1;
+    margin: 3% 3% 3% 12%;
+}
+.icons{
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 15%;
+}
+
+.intro{
+    width: 27.688rem;
+}
+
+h1, h2{    
+    color: #29005F;
+}
+h1{
+    font-size: 2.625rem;
+}
+h2{
+    font-size: 0.625rem;
+
+}
+p, a{
+    font-size: 1.125rem;
+}
+h1, p{
+    margin-bottom: 5%;
+}
+
+.img-intro{
+    width: 100%;
+}
+
+.data{
+    width: 26rem;
+    margin-top: 20%;
+    justify-content: space-between;
+}
+
+input, button{
+    height: 2.75rem;    
+    border-radius: 5px;
+    border: 1px solid #29005F;
+}
+
+input{
+    width: 18.875rem;
+    
+    padding-left: 3%;
+}
+button{
+    width: 8.438rem;
+    color: white;
+    background: #29005F;
+}
+
+::placeholder{
+    font-size: 1.25rem;
+    color: #D4D4D4;
+}
+
+a{
+    text-decoration: none;
+}
+button:hover{
+    scale: 1.02;
+}
+button:active{
+    scale: 0.95;
+}
+input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+@media (max-width: 1024px) {
+    body{
+        flex-direction: column;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        height: 700px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    main{
+        width: 100%;
+        margin: 0;
+        display: flex;  
+    }
+    main .box:nth-of-type(3){
+        order: 1;
+    }
+    main .box:nth-of-type(1){
+        order: 2;
+    }
+    .icons{
+        width: 80vw;
+        justify-content: center;
+        margin: 8% 0% 8% 10%;
+    }
+    .intro{
+        width: 65vw;
+        margin: 5% 0% 0% 12%;
+    }
+    .img-intro{
+        width: 80vw;
+    }
+      
+    button, input{        
+        width: 70vw;
+        height: 4rem;
+    }
+    button{
+        font-size: 1.5rem;
+    }
+    input{
+        margin-bottom: 2%;
+    }
+    .data{
+        margin: 10% 0% 0% 12%;
+        flex-direction: column;
+        width: 80vw;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 1rem;
+        margin: 3% 0% 3% 0%;
+    }
+    p, a, input, ::placeholder {
+        font-size: 1.8rem;
+    }
+    img{
+        width: 4rem;
+    }
+    .img-header {
+        width: 20%;
+    }
+}
